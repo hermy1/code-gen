@@ -1,24 +1,31 @@
-import React,{useEffect} from 'react'
+import React,{useEffect, useRef} from 'react'
 
 function Ball({}) {
-    let position :number = 0
-    let direction :string = 'bottom'
 
-    const x: object = {
-        bottom: 0,
-        right: 0,
-    }
-    const y: object = {
-        bottom: 0,
-        right: 0,
-    }
-    
+const [position,setPositon] = React.useState({})
+const parentDiv = {
+    maxWidth: 450,
+    maxHeight: 250,
+}
+
+
+
 useEffect(() => {
-   
-}, [])
+   const randomX = Math.floor(Math.random() * parentDiv.maxWidth)
+    const randomY = Math.floor(Math.random() * parentDiv.maxHeight)
+    console.log(position)
+    setTimeout(() => {
+        setPositon({top: randomY, left: randomX})
+    }, 2000)
+}, [position])
+
+
+
 
     return (
-    <div className={`bg-red-500 rounded-full absolute animate-bounce ball ${direction}-${position} right-0 bottom-0`}>
+    <div className={`bg-red-500 rounded-full absolute animate-bounce ball`}
+    style={position}
+    >
     </div>
   )
 }
