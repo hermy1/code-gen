@@ -1,28 +1,15 @@
 .App{
-    width: 650px;
+    width: 80vw;
     margin: 0 auto 0 auto;
     margin-top: 200px;
-    height: 500px;
+    height: 60vh;
     position: relative;
-    border: 10px solid rgb(192, 108, 108);
+    border: 1px solid rgb(224, 219, 219);
     box-shadow: 0 0 3px rgba(0,0,0,0.5);
-    .App-header{
-        width: 500px;
-        height: 350px;
-        border: 10px solid rgb(52, 164, 52);
-        position : absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
+    border-radius: 10px;
+    .children{
+        margin:auto 0 auto 0;
+        width: 70%;
+        background-color: bisque;
     }
-
-    .ball {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-    }
-   
-   
 }

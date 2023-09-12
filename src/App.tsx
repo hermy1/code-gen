@@ -1,14 +1,18 @@
 import React from 'react';
-import './App.scss'
-import Ball from './Components/Ball'
+import './App.scss';
+import Header from './Components/Header';
+import Router from './Router';
 
 function App() {
   return (
+  
     <div className="App">
-      <header className="App-header">
-        <Ball />
-      </header>
+     <Header />
+     <div className="children">
+        <h1>Children</h1>
+     </div>
     </div>
+  
   );
 }
 
