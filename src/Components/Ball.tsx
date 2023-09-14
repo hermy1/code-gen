@@ -2,10 +2,13 @@ import React,{useEffect, useRef} from 'react'
 
 function Ball({}) {
 
-const [position,setPositon] = React.useState({})
+const [position,setPositon] = React.useState({
+    top: 290,
+    left: 200
+})
 const parentDiv = {
-    maxWidth: 450,
-    maxHeight: 250,
+    maxWidth: 430,
+    maxHeight: 290,
 }
 
 
@@ -15,7 +18,7 @@ useEffect(() => {
     const randomY = Math.floor(Math.random() * parentDiv.maxHeight)
     console.log(position)
     setTimeout(() => {
-        setPositon({top: randomY, left: randomX})
+        setPositon({top:randomY, left: randomX})
     }, 2000)
 }, [position])
 

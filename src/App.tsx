@@ -1,14 +1,20 @@
 import React from 'react';
-import './App.scss'
-import Ball from './Components/Ball'
+import './App.scss';
+import Header from './Components/Header';
+import Outlet from './Router';
+import { Router } from 'react-router-dom';
 
 function App() {
   return (
+   
     <div className="App">
-      <header className="App-header">
-        <Ball />
-      </header>
+     <Header />
+     <div className="children">
+      <Outlet />
+     </div>
     </div>
+ 
+  
   );
 }
 
