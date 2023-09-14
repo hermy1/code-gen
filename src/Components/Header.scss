@@ -1,5 +1,8 @@
 nav{
+    width: 80%vw;
+    // background-color: rgb(224, 219, 219);
     ul{
+        display: flex;
         li{
             a{
                 color: rgb(9, 9, 50);
@@ -8,7 +11,7 @@ nav{
                 font-weight: 600;
                 padding: 0 1rem;
                 &:hover{
-                    color: #ccc;
+                    color: rgb(52, 194, 207);
                 }
             }
         }
