@@ -5,6 +5,10 @@ import Contact from './Pages/Contact';
 import Profile from './Pages/Profile';
 import Error from './Pages/Error';
 import Square from './Pages/Square';
+import Shape from './Pages/Shape';
+import Triangle from './Pages/Triangle';
+import Circle from './Pages/Circle';
+
 
 function Router() {
  const router =  createBrowserRouter([
@@ -13,6 +17,9 @@ function Router() {
     {path: '/contact', element: <Contact/>},
     {path: '/profile/:pageNumber', element: <Profile/>},
     {path: '/square', element: <Square/>},
+    {path: '/triangle', element: <Triangle/>},
+    {path: '/circle', element: <Circle/>},
+    {path: '/shape/:shapeId',element:<Shape />},
     {path: '*', element: <Error/>},
  ]);
   return (

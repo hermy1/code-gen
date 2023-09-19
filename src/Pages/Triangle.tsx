@@ -1,12 +1,12 @@
-import { squareData } from '../data/FakeData'
+import { triangleData } from '../data/FakeData'
 import { useNavigate } from 'react-router-dom'
-function Square() {
+function Triangle() {
     const navigate = useNavigate()
   return (
     <div>
-        <h1 className='text-3xl medium'>Square</h1>
+        <h1 className='text-3xl medium'>Triangle</h1>
         <div className='grid grid-cols-3 gap-4'>
-            {squareData.map((item, index) => {
+            {triangleData.map((item, index) => {
                 return (
                     <div key={index} className='bg-green-200 p-4'>
                         <h3 className='text-2xl'>{item.name}</h3>
@@ -22,4 +22,4 @@ function Square() {
   )
 }
 
-export default Square
+export default Triangle

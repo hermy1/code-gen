@@ -1,8 +1,24 @@
-import React from 'react'
-// TODO: show all the params of the data
+import { circleData } from '../data/FakeData'
+import { useNavigate } from 'react-router-dom'
 function Circle() {
+    const navigate = useNavigate()
   return (
-    <div>Circle</div>
+    <div>
+        <h1 className='text-3xl medium'>Circle</h1>
+        <div className='grid grid-cols-3 gap-4'>
+            {circleData.map((item, index) => {
+                return (
+                    <div key={index} className='bg-green-200 p-4'>
+                        <h3 className='text-2xl'>{item.name}</h3>
+                        <button 
+                            className='bg-blue-500 text-white px-4 py-2 mt-2 rounded-md'
+                            onClick={() => navigate(`/shape/${item.id}`, {state: item})}
+                        >{item.color}</button>
+                    </div>
+                )
+            })}
+        </div>
+    </div>
   )
 }
 
