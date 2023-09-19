@@ -34,6 +34,11 @@ function Header() {
               Circle
             </a>
           </li>
+          <li>
+            <a href={'/hooks'} className="nav-link">
+              Hooks
+            </a>
+          </li>
         </ul>
      </nav>
 
