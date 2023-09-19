@@ -20,13 +20,18 @@ function Header() {
             </a>
           </li>
           <li>
-            <a href={'/contact'} className="nav-link">
-              Contact us
+            <a href={'/square'} className="nav-link">
+              Square
             </a>
           </li>
           <li>
-            <a href={'/square'} className="nav-link">
-              Square
+            <a href={'/triangle'} className="nav-link">
+              Triangle
+            </a>
+          </li>
+          <li>
+            <a href={'/circle'} className="nav-link">
+              Circle
             </a>
           </li>
         </ul>
