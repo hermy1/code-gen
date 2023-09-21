@@ -1,4 +1,5 @@
 import React,{useEffect,useRef,useState} from 'react'
+import './Hooks.scss'
 function Hooks() {
     const [counter, setCounter] = useState(0);
     const [name, setName] = useState('');
@@ -45,7 +46,7 @@ function Hooks() {
             <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4' onClick={()=>reset()}>reset</button>
           <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4' onClick={()=> subtract()}>sub -</button>
         </div>
-      <p>{show}</p>
+      <p className={`${show && 'show'}`}>{show}</p>
     </div>
   )
 }
