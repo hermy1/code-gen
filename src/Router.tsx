@@ -8,6 +8,7 @@ import Square from './Pages/Square';
 import Shape from './Pages/Shape';
 import Triangle from './Pages/Triangle';
 import Circle from './Pages/Circle';
+import Forms from './Pages/Forms';
 
 
 function Router() {
@@ -20,6 +21,7 @@ function Router() {
     {path: '/triangle', element: <Triangle/>},
     {path: '/circle', element: <Circle/>},
     {path: '/shape/:shapeId',element:<Shape />},
+    {path: '/forms', element:<Forms />},
     {path: '*', element: <Error/>},
  ]);
   return (
